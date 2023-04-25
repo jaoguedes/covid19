@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Covid 19</title>
+</head>
+
+<body>
+    <!-- cabeçario -->
+    <header>
+        <h1>Covid 19</h1>
+        <nav>
+            <a href="index.html">INICIO |</a>
+            <a href="sobre.html">SOBRE |</a>
+            <a href="equipe.html">EQUIPE</a>
+        </nav>
+    </header>
+    <!-- miolo -->
+    <div id="container">
+        <div id="div-erro">...</div>
+        <div id="area-mapa"></div>
+
+        <div id="graficoPizza" class="tabConteudo">
+
+        </div>
+        <div id="tabela">
+            <table id="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Sigla</th>
+                        <th>Casos</th>
+                        <th>Mortes</th>
+                        <th>Suspeitos</th>
+                        <th>Descartado</th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+
+        <button class="tablink" onclick="carregarMapa();">Mapa</button>
+        <button class="tablink" onclick="carregarPizza();">Grafico pizza</button>
+        <button class="tablink" onclick="carregarTabela();">Tabela</button>
+    </div>
+    <footer>
+        <img src="img/logo senai.png" alt="senai">
+    </footer>
+
+</body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+</html>
