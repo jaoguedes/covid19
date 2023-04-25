@@ -176,7 +176,3 @@ function prepararTabela(dadosTab) {
 
 }
  
-
-function obrigado(){
-    alert('Agradeço pelo feedback')
-}
