@@ -1,3 +1,15 @@
+function menuOnClick() {
+    document.getElementById('menu-bar').classList.toggle('change');//parar remover e adicionar outra
+    document.getElementById('nav').classList.toggle('change');
+    document.getElementById('menu-bg').classList.toggle('change');
+    let nav = document.getElementById('nav');
+    if (nav.style.display == 'block') {
+        nav.style.display = 'none'
+    }
+    else {
+        nav.style.display = 'block'
+    }
+}
 // FAZENDO O MAPA
 function exibirErro(mensagem) {
     let erro = document.getElementById('div-erro');
@@ -176,3 +188,4 @@ function prepararTabela(dadosTab) {
 
 }
  
+

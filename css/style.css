@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     display: flex;
+
     height: 100vh;
     flex-direction: column;
     background: linear-gradient(240.84deg, #B82D2D 24.74%, #C04E4E 97.11%);
@@ -11,7 +12,31 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+header #secBar {
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+header #secbar,
+a {
+    text-decoration: none;
+    color: white;
+    border-right: 1px 2px solid white;
+    width: 30px;
+    font-size: 20px;
+}
+nav {
+    display: none;
+}
+#menu,
+#menu-bar {
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 header h1 {
@@ -22,18 +47,12 @@ header h1 {
     font-size: 40px;
 }
 
-header nav {
-    margin-top: 40px;
-    margin-right: 70px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 253, 227);
+    font-family: 'Poppins', sans-serif;
 }
 
-header nav a {
-    text-decoration: none;
-    color: white;
-    border-right: 1px 2px solid white;
-    width: 30px;
-    font-size: 20px;
-}
 
 /*  */
 #container {
@@ -71,6 +90,7 @@ header nav a {
     cursor: pointer;
     padding: 14px 28px;
     font-size: 17px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -97,8 +117,13 @@ th {
     padding: 2px 10px;
 }
 
+tr {
+    color: white;
+}
+
 .listra {
     background-color: rgb(231, 157, 154);
+
 }
 
 #tabela {
@@ -128,21 +153,117 @@ footer {
         margin-top: 0;
     }
 
+    header #secbar,
+    a {
+        display: none;
+    }
+
+    #menu-bar {
+        cursor: pointer;
+        margin: 4px;
+        margin-left: 0;
+    }
+
+    .bar {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        border-radius: 4px;
+
+
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+        color: rgb(34, 34, 34);
+
+        padding: 15px;
+
+        width: 110px;
+    }
+
+    nav a:hover {
+        display: flex;
+        flex-direction: column;
+        color: #2f2c2c;
+
+        letter-spacing: 1.3px;
+    }
+
+    #nav {
+        font-weight: bold;
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+        margin: auto;
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+        margin: auto;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    .change #bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .change-bg {
+        width: 240px;
+        height: 859px;
+        transform: translate(-60%, -30%);
+    }
+
+
+    #menu,
+    #menu-bar {
+        justify-self: center;
+        margin-left: 0;
+
+    }
+
     #container button {
         margin: auto;
     }
 
-    #area-mapa  {
-      width: 69%;
+    #area-mapa {
+        width: 69%;
     }
+
     #graficoPizza {
         width: 80%;
         margin: 0;
     }
+
     #tabela {
-       font-size: 10px;
-       margin: 0;
+        font-size: 10px;
+        margin: 0;
     }
 
-    
+
 }
