@@ -180,16 +180,12 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     header h1 {
-        margin: 0;
-    }
-
-    .bar {
-        transition: 0s;
+        margin: 0 1;
     }
 
     header nav {
@@ -206,12 +202,13 @@ footer {
         cursor: pointer;
         margin: 4px;
         margin-left: 0;
+        justify-self: flex-end;
     }
 
     .bar {
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: #ffffff;
         margin: 6px 0;
         border-radius: 4px;
 
@@ -221,7 +218,7 @@ footer {
     nav a {
         display: flex;
         flex-direction: column;
-        color: rgb(34, 34, 34);
+        color: rgb(255, 255, 255);
 
         padding: 15px;
 
@@ -231,14 +228,15 @@ footer {
     nav a:hover {
         display: flex;
         flex-direction: column;
-        color: #2f2c2c;
-
+        color: #bdbdbd;
+        justify-self: flex-end;
         letter-spacing: 1.3px;
     }
 
     #nav {
         font-weight: bold;
         display: none;
+        justify-self: flex-end;
     }
 
     nav a {
@@ -261,7 +259,7 @@ footer {
     }
 
     .change .bar {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
 
     }
 
@@ -283,13 +281,6 @@ footer {
         transform: translate(-60%, -30%);
     }
 
-
-    #menu,
-    #menu-bar {
-        justify-self: center;
-        margin-left: 0;
-
-    }
 
     #container2 {
         flex-direction: column;
