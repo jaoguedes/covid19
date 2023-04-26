@@ -28,9 +28,11 @@ a {
     width: 30px;
     font-size: 20px;
 }
+
 nav {
     display: none;
 }
+
 #menu,
 #menu-bar {
     justify-self: flex-end;
@@ -68,8 +70,10 @@ body {
     display: none;
 }
 
-#area-mapa {
+#area-mapa  {
     display: none;
+    
+    
 }
 
 #graficoPizza {
@@ -141,7 +145,7 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: row;
-       justify-content: space-between;
+        justify-content: space-between;
     }
 
     header h1 {
@@ -242,14 +246,17 @@ footer {
     }
 
 
-   
+
 
     #container button {
         margin: auto;
     }
 
     #area-mapa {
-        width: 69%;
+        position: relative;
+        width: 384px;
+        height: 347px;
+        overflow: hidden;
     }
 
     #graficoPizza {

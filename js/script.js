@@ -189,3 +189,8 @@ function prepararTabela(dadosTab) {
 }
  
 
+document.addEventListener(  "DOMContentLoaded",
+                            function(event) {
+                                carregarMapa();
+                            }
+);
